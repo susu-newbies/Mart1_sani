@@ -1,5 +1,5 @@
-int IRSensor = 2; // connect ir sensor to arduino pin 2
-int motor = 4 ; // conect Led to arduino pin 13
+const int IRSensor = 2; // connect ir sensor to arduino pin 2
+const int motor = 4 ; // for motor 
 
 
 
@@ -7,7 +7,7 @@ void setup()
 {
 
   pinMode (IRSensor, INPUT); // sensor pin INPUT
-  pinMode (motor, OUTPUT); // Led pin OUTPUT
+  pinMode (motor, OUTPUT); // motor pin OUTPUT
   Serial.begin(9600);
 }
 
@@ -18,13 +18,13 @@ void loop()
   Serial.println(statusSensor);
   
   if (statusSensor == 1){
-    digitalWrite(motar, LOW); // LED LOW
+    digitalWrite(motar, LOW); // motor relay LOW
     Serial.println("not dedected");
   }
   
   else
   {
-    digitalWrite(motor, HIGH); // LED High
+    digitalWrite(motor, HIGH); // motor relay  High
     Serial.println("Dedected")
   }
   
