@@ -34,6 +34,8 @@ void loop()
   //Serial.println("Dedected");
     motorON();
     checkexit();
+    digitalWrite(buzzer,LOW);
+    digitalWrite(LED,LOW);
   }
 }
 
@@ -43,11 +45,10 @@ void motorON()
   digitalWrite(motor2,LOW);// motor on
   digitalWrite(buzzer,HIGH);
   digitalWrite(LED,HIGH);
-  delay(300);
+  delay(350);
   digitalWrite(motor1, LOW); 
   digitalWrite(motor2,LOW);// motor off
-  digitalWrite(buzzer,LOW);
-  digitalWrite(LED,LOW);
+  
  }
 
 
