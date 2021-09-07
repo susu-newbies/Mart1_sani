@@ -52,7 +52,7 @@ void motorON()
   digitalWrite(buzzer, HIGH);
   digitalWrite(ledP,HIGH);
   digitalWrite(ledN,LOW);
-  delay(380);
+  delay(400);
   digitalWrite(motor1, LOW);
   digitalWrite(motor2, LOW); // motor off
 
@@ -75,10 +75,10 @@ void humaneffect()
 {
     digitalWrite(ledP, LOW);
     digitalWrite(ledN, LOW) ;
-    digitalWrite(buzzer,LOW);
-    delay (300);
+    //digitalWrite(buzzer,LOW);
+    delay (1000);
     digitalWrite(ledP, HIGH);
     digitalWrite(ledN, LOW);
-    digitalWrite(buzzer,HIGH);
+    //digitalWrite(buzzer,HIGH);
      
   }
