@@ -1,6 +1,8 @@
 /*Serial commands are used to debug the program , in the real time run they are are not needed .
   so the serial commands are commented in the code*/
 
+  // ###### TEAM NEWBIES ########## 
+
 
 const int IRSensor = 3; // connect ir sensor to arduino pin 2
 const int motor1 = 4 ; // for motor
@@ -52,7 +54,7 @@ void motorON()
   digitalWrite(buzzer, HIGH);
   digitalWrite(ledP,HIGH);
   digitalWrite(ledN,LOW);
-  delay(400);
+  delay(500);
   digitalWrite(motor1, LOW);
   digitalWrite(motor2, LOW); // motor off
 
@@ -65,7 +67,7 @@ void checkexit() // To confirm that the hand is taken and getting ready for nxt 
   int status = digitalRead (IRSensor);
   while ( status == 0 )
   {
-    humaneffect();
+    //humaneffect();
     //Serial.println("plz take the hand");
     status = digitalRead (IRSensor);
   }
