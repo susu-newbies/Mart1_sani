@@ -82,5 +82,5 @@ void humaneffect()
     digitalWrite(ledP, HIGH);
     digitalWrite(ledN, LOW);
     //digitalWrite(buzzer,HIGH);
-     
+    
   }
